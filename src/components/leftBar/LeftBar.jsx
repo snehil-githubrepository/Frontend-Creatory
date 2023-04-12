@@ -15,6 +15,8 @@ import Binoculars from "../../assets/binoculars.png";
 import Dollar from "../../assets/dollar.png";
 import { AuthContext } from "../../context/authContext";
 import { useContext } from "react";
+import {Link} from 'react-router-dom';
+
 
 const LeftBar = () => {
   const { currentUser } = useContext(AuthContext);
@@ -57,26 +59,36 @@ const LeftBar = () => {
           <span style={{ fontSize: "1.5em", fontWeight: "bold" }}>
             Categories
           </span>
+          <Link to="/movies">
           <div className="item">
             <img src={Movies} alt="" />
             <span>Movies</span>
           </div>
+          </Link>
+          <Link to="/space">
           <div className="item">
             <img src={Space} alt="" />
             <span>Space</span>
           </div>
+          </Link>
+          <Link to="/music">
           <div className="item">
             <img src={Music} alt="" />
             <span>Music</span>
           </div>
+          </Link>
+          <Link to="/youtube">
           <div className="item">
             <img src={Youtube} alt="" />
             <span>Youtube</span>
           </div>
+          </Link>
+          <Link to="/travel">
           <div className="item">
             <img src={Travel} alt="" />
             <span>Travel & Adventure</span>
           </div>
+          </Link>
         </div>
         <hr />
         <div className="menu">

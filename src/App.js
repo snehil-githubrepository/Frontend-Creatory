@@ -6,6 +6,7 @@ import {
   Route,
   Outlet,
   Navigate,
+  Routes,
 } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
 import LeftBar from "./components/leftBar/LeftBar";
@@ -16,6 +17,12 @@ import "./style.scss";
 import { useContext } from "react";
 import { DarkModeContext } from "./context/darkModeContext";
 import { AuthContext } from "./context/authContext";
+// import { Movie } from "@mui/icons-material";
+import Movies1 from "./pages/movies/Movies1";
+import Music from "./pages/music/Music";
+import Space from "./pages/space/Space";
+import Travel from "./pages/travel/Travel";
+import Youtube from "./pages/youtube/Youtube";
 
 function App() {
   const {currentUser} = useContext(AuthContext);
@@ -26,6 +33,12 @@ function App() {
     return (
       <div className={`theme-${darkMode ? "dark" : "light"}`}>
         <Navbar />
+        <Routes>
+          <Route path="/movies" element={<movie />} />
+          {/* <Route path="/space" element={<space />} />
+          <Route path="/music" element={<music />} />
+          <Route path="/music" element={<music />} /> */}
+       </Routes>
         <div style={{ display: "flex" }}>
           <LeftBar />
           <div style={{ flex: 6 }}>
@@ -63,6 +76,26 @@ function App() {
           element: <Profile />,
         },
       ],
+    },
+    {
+      path: "/movies",
+      element: <Movies1/>,
+    },
+    {
+      path: "/music",
+      element: <Music />
+    },
+    {
+      path: "/space",
+      element: <Space />
+    },
+    {
+      path: "/travel",
+      element: <Travel/>
+    },
+    {
+      path: "/youtube",
+      element: <Youtube/>
     },
     {
       path: "/login",
