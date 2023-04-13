@@ -3,7 +3,11 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import { AuthContextProvider } from "./context/authContext";
 import { DarkModeContextProvider } from "./context/darkModeContext";
+<<<<<<< Updated upstream
 import { BrowserRouter } from 'react-router-dom';
+=======
+// import { BrowserRouter } from 'react-router-dom';
+>>>>>>> Stashed changes
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

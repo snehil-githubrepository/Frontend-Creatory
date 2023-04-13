@@ -1,9 +1,9 @@
 import "./leftBar.scss";
-import Friends from "../../assets/1.png";
-import Groups from "../../assets/2.png";
-import Market from "../../assets/3.png";
-import Watch from "../../assets/4.png";
-import Memories from "../../assets/5.png";
+// import Friends from "../../assets/1.png";
+// import Groups from "../../assets/2.png";
+// import Market from "../../assets/3.png";
+// import Watch from "../../assets/4.png";
+// import Memories from "../../assets/5.png";
 import Movies from "../../assets/tv.png";
 import Space from "../../assets/space.png";
 import Music from "../../assets/music.png";
@@ -100,7 +100,7 @@ const LeftBar = () => {
           <div className="item">
             <img src={Coffee} alt="" />
             <span>Buy Me Coffee</span>
-            <img src={Dollar}></img>
+            <img src={Dollar} alt=""></img>
           </div>
           <div className="item">
             <img src={Settings} alt="" />
