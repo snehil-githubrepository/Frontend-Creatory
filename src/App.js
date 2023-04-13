@@ -18,19 +18,11 @@ import { useContext } from "react";
 import { DarkModeContext } from "./context/darkModeContext";
 import { AuthContext } from "./context/authContext";
 // import { Movie } from "@mui/icons-material";
-<<<<<<< Updated upstream
-import Movies1 from "./pages/movies/Movies1";
-import Music from "./pages/music/Music";
-import Space from "./pages/space/Space";
-import Travel from "./pages/travel/Travel";
-import Youtube from "./pages/youtube/Youtube";
-=======
 import Movies1 from "./pages/Categories/Movies1";
 import Music from "./pages/Categories/Music";
 import Space from "./pages/Categories/Space";
 import Travel from "./pages/Categories/Travel";
 import Youtube from "./pages/Categories/Youtube";
->>>>>>> Stashed changes
 
 function App() {
   const {currentUser} = useContext(AuthContext);

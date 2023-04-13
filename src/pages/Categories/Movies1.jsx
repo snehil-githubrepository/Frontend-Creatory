@@ -1,9 +1,10 @@
 import React from 'react'
+import LeftBar from '../../components/leftBar/LeftBar'
 
 export default function Movies1() {
   return (
     <div>
-      <h1>Hello , This is Movies!</h1>
+      <LeftBar/>
     </div>
   )
 }
